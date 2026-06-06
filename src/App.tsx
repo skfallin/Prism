@@ -35,24 +35,39 @@ const navItems = ['Storia', 'Collettivo', 'Workshop', 'Programmi', 'Contatti'];
 const featureCards = [
   {
     number: '01',
-    title: 'Storyboard di progetto.',
+    title: 'Visione.',
     iconUrl:
       'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171918_4a5edc79-d78f-4637-ac8b-53c43c220606.png&w=1280&q=85',
-    items: ['Dai forma alle idee con precisione.', 'Mappa le sequenze in ogni fase produttiva.', 'Gestisci le revisioni senza attriti.', 'Condividi le board con chi collabora al progetto.'],
+    items: [
+      'Definiamo il mondo visivo del progetto.',
+      'Raccogliamo riferimenti, tono e atmosfera.',
+      'Trasformiamo l’idea in una direzione concreta.',
+      'Costruiamo una base solida prima della produzione.',
+    ],
   },
   {
     number: '02',
-    title: 'Critiche intelligenti.',
+    title: 'Ripresa.',
     iconUrl:
       'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171741_ed9845ab-f5b2-4018-8ce7-07cc01823522.png&w=1280&q=85',
-    items: ['Analisi AI del ritmo visivo.', 'Note creative calibrate sull’intenzione.', 'Integrazioni pensate per tagli più rapidi.'],
+    items: [
+      'Disegniamo luce, movimento e composizione.',
+      'Lavoriamo sul set con un approccio essenziale.',
+      'Ogni inquadratura ha una funzione narrativa.',
+      'L’immagine nasce già pensando alla post.',
+    ],
   },
   {
     number: '03',
-    title: 'Capsula immersiva.',
+    title: 'Post-produzione.',
     iconUrl:
       'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171809_f56666dc-c099-4778-ad82-9ad4f209567b.png&w=1280&q=85',
-    items: ['Notifiche silenziate mentre sei nel flusso.', 'Paesaggi sonori ambientali per concentrarti.', 'Calendari sincronizzati tra i team.'],
+    items: [
+      'Rifiniamo ritmo, colore e materia visiva.',
+      'Integriamo VFX, motion e compositing.',
+      'Puliamo, costruiamo e trasformiamo il frame.',
+      'Portiamo il progetto alla sua forma finale.',
+    ],
   },
 ];
 
@@ -192,7 +207,7 @@ function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5, ease }}
               >
-                Prisma è una rete internazionale di artisti visivi, filmmaker e storyteller uniti non
+                Prisma è una rete internazionale di artisti, filmmaker e storyteller uniti non
                 da confini, ruoli o etichette, ma dalla stessa urgenza di trasformare prospettive
                 uniche in opere capaci di lasciare il segno.
               </motion.p>
@@ -228,7 +243,7 @@ function About() {
   return (
     <section className="bg-black px-4 py-20 sm:px-6 md:py-28">
       <div className="mx-auto max-w-6xl bg-[#101010] px-5 py-16 text-center sm:px-8 md:py-24">
-        <p className="mb-8 text-[10px] text-primary sm:text-xs">Arti visive</p>
+        <p className="mb-8 text-[10px] text-primary sm:text-xs">Chi sono</p>
         <h2
           className="mx-auto max-w-3xl text-3xl font-normal leading-[0.95] sm:text-4xl sm:leading-[0.9] md:text-5xl lg:text-6xl xl:text-7xl"
           style={{ color: primaryTextColor }}
@@ -277,7 +292,7 @@ function VideoFeatureCard() {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/60" />
       <p className="absolute bottom-5 left-5 text-lg font-normal" style={{ color: primaryTextColor }}>
-        La tua tela creativa.
+        Dal concept al frame finale.
       </p>
     </motion.article>
   );
@@ -306,7 +321,7 @@ function FeatureCard({ index, number, title, iconUrl, items }: FeatureCardProps)
         ))}
       </ul>
       <a href="#" className="mt-auto inline-flex items-center gap-2 pt-10 text-sm text-primary">
-        Scopri di più
+        Guarda cosa facciamo
         <ArrowRight className="h-4 w-4 -rotate-45" />
       </a>
     </motion.article>
@@ -324,8 +339,8 @@ function Features() {
         >
           <WordsPullUpMultiStyle
             segments={[
-              { text: 'Workflow da studio per creator visionari.' },
-              { text: 'Pensati per una visione pura. Alimentati dall’arte.', className: 'text-gray-500' },
+              { text: 'Dove le idee diventano immagini.' },
+              { text: "Dal set alla post-produzione. Alimentati dall'arte.", className: 'text-gray-500' },
             ]}
           />
         </h2>
