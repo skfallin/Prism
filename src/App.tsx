@@ -144,7 +144,7 @@ function Hero() {
       <div className="relative h-full overflow-hidden rounded-2xl md:rounded-[2rem]">
         <video
           className="absolute inset-0 h-full w-full object-cover"
-          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4"
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260319_055001_8e16d972-3b2b-441c-86ad-2901a54682f9.mp4"
           autoPlay
           loop
           muted
@@ -187,7 +187,7 @@ function Hero() {
 
             <div className="max-w-md pb-4 lg:col-span-4 lg:pb-10">
               <motion.p
-                className="text-xs leading-[1.2] text-primary/70 sm:text-sm md:text-base"
+                className="text-xs leading-[1.2] text-primary/90 sm:text-sm md:text-base"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5, ease }}
@@ -269,7 +269,7 @@ function VideoFeatureCard() {
     >
       <video
         className="absolute inset-0 h-full w-full object-cover"
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260406_133058_0504132a-0cf3-4450-a370-8ea3b05c95d4.mp4"
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260422_112520_ee819691-f2e8-4c54-bb77-3fb72c84eaa5.mp4"
         autoPlay
         loop
         muted
