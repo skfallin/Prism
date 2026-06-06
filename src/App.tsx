@@ -30,29 +30,29 @@ type FeatureCardProps = {
   items: string[];
 };
 
-const navItems = ['Our story', 'Collective', 'Workshops', 'Programs', 'Inquiries'];
+const navItems = ['Storia', 'Collettivo', 'Workshop', 'Programmi', 'Contatti'];
 
 const featureCards = [
   {
     number: '01',
-    title: 'Project Storyboard.',
+    title: 'Storyboard di progetto.',
     iconUrl:
       'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171918_4a5edc79-d78f-4637-ac8b-53c43c220606.png&w=1280&q=85',
-    items: ['Structure concepts with precision.', 'Map sequences across production.', 'Track revisions without friction.', 'Share boards with collaborators.'],
+    items: ['Dai forma alle idee con precisione.', 'Mappa le sequenze in ogni fase produttiva.', 'Gestisci le revisioni senza attriti.', 'Condividi le board con chi collabora al progetto.'],
   },
   {
     number: '02',
-    title: 'Smart Critiques.',
+    title: 'Critiche intelligenti.',
     iconUrl:
       'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171741_ed9845ab-f5b2-4018-8ce7-07cc01823522.png&w=1280&q=85',
-    items: ['AI analysis for visual rhythm.', 'Creative notes tuned to intent.', 'Tool integrations for faster cuts.'],
+    items: ['Analisi AI del ritmo visivo.', 'Note creative calibrate sull’intenzione.', 'Integrazioni pensate per tagli più rapidi.'],
   },
   {
     number: '03',
-    title: 'Immersion Capsule.',
+    title: 'Capsula immersiva.',
     iconUrl:
       'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171809_f56666dc-c099-4778-ad82-9ad4f209567b.png&w=1280&q=85',
-    items: ['Silence notifications during flow.', 'Ambient soundscapes for focus.', 'Schedule syncing across teams.'],
+    items: ['Notifiche silenziate mentre sei nel flusso.', 'Paesaggi sonori ambientali per concentrarti.', 'Calendari sincronizzati tra i team.'],
   },
 ];
 
@@ -192,9 +192,9 @@ function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5, ease }}
               >
-                Prisma is a worldwide network of visual artists, filmmakers and storytellers bound not by
-                place, status or labels but by passion and hunger to unlock potential through our unique
-                perspectives.
+                Prisma è una rete internazionale di artisti visivi, filmmaker e storyteller uniti non
+                da confini, ruoli o etichette, ma dalla stessa urgenza di trasformare prospettive
+                uniche in opere capaci di lasciare il segno.
               </motion.p>
               <motion.a
                 href="#"
@@ -203,7 +203,7 @@ function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.7, ease }}
               >
-                Join the lab
+                Entra nel laboratorio
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-black transition-transform group-hover:scale-110 sm:h-10 sm:w-10">
                   <ArrowRight className="h-4 w-4 text-primary" />
                 </span>
@@ -219,7 +219,7 @@ function Hero() {
 function About() {
   const textRef = useRef<HTMLParagraphElement>(null);
   const bodyText =
-    'Over the last seven years, I have worked with Parallax, a Berlin-based production house that crafts cinema, series, and Noir Studio in Paris. Together, we have created work that has earned international acclaim at several major festivals.';
+    'Negli ultimi sette anni ho collaborato con Parallax, casa di produzione berlinese attiva tra cinema e serie, e con Noir Studio a Parigi. Insieme abbiamo firmato lavori selezionati e premiati in diversi festival internazionali.';
   const { scrollYProgress } = useScroll({
     target: textRef,
     offset: ['start 0.8', 'end 0.2'],
@@ -228,16 +228,16 @@ function About() {
   return (
     <section className="bg-black px-4 py-20 sm:px-6 md:py-28">
       <div className="mx-auto max-w-6xl bg-[#101010] px-5 py-16 text-center sm:px-8 md:py-24">
-        <p className="mb-8 text-[10px] text-primary sm:text-xs">Visual arts</p>
+        <p className="mb-8 text-[10px] text-primary sm:text-xs">Arti visive</p>
         <h2
           className="mx-auto max-w-3xl text-3xl font-normal leading-[0.95] sm:text-4xl sm:leading-[0.9] md:text-5xl lg:text-6xl xl:text-7xl"
           style={{ color: primaryTextColor }}
         >
           <WordsPullUpMultiStyle
             segments={[
-              { text: 'I am Marcus Chen,' },
-              { text: 'a self-taught director.', className: 'font-serif italic' },
-              { text: 'I have skills in color grading, visual effects, and narrative design.' },
+              { text: 'Sono Marco Rinaldi,' },
+              { text: 'regista autodidatta.', className: 'font-serif italic' },
+              { text: 'Mi occupo di color grading, effetti visivi e progettazione narrativa.' },
             ]}
           />
         </h2>
@@ -277,7 +277,7 @@ function VideoFeatureCard() {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/60" />
       <p className="absolute bottom-5 left-5 text-lg font-normal" style={{ color: primaryTextColor }}>
-        Your creative canvas.
+        La tua tela creativa.
       </p>
     </motion.article>
   );
@@ -306,7 +306,7 @@ function FeatureCard({ index, number, title, iconUrl, items }: FeatureCardProps)
         ))}
       </ul>
       <a href="#" className="mt-auto inline-flex items-center gap-2 pt-10 text-sm text-primary">
-        Learn more
+        Scopri di più
         <ArrowRight className="h-4 w-4 -rotate-45" />
       </a>
     </motion.article>
@@ -324,8 +324,8 @@ function Features() {
         >
           <WordsPullUpMultiStyle
             segments={[
-              { text: 'Studio-grade workflows for visionary creators.' },
-              { text: 'Built for pure vision. Powered by art.', className: 'text-gray-500' },
+              { text: 'Workflow da studio per creator visionari.' },
+              { text: 'Pensati per una visione pura. Alimentati dall’arte.', className: 'text-gray-500' },
             ]}
           />
         </h2>
